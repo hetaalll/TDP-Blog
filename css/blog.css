@@ -1,0 +1,79 @@
+@import "footer.css";
+@import "header.css";
+@import "responsive.css";
+body {
+    margin: 0;
+}
+
+.grid2 {
+    display: grid;
+    grid-gap: 30px;
+    margin: 50px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.flex2 {
+    display: flex;
+    flex-direction: column;
+    transition: all 0.5s ease-in-out;
+}
+
+.grid2 div.flex2:hover {
+    transform: scale(1.05);
+}
+
+.blog-title {
+    padding-top: 5px;
+    font-family: "Roboto Slab", serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+p, a {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.gallery__img {
+    height: auto;
+    width: 100%;
+}
+
+button {
+    font-family: "Roboto Slab", serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: 17px;
+    background-color: white;
+    border: none;
+    padding-left: 0;
+    color: rgb(133, 133, 133);
+}
+
+.read-more:hover {
+    text-decoration: none;
+    color: red;
+    transition: 0.5s;
+}
+
+@media (max-width:800px) {
+    .grid2 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    p, a {
+        font-size: 17px;
+    }
+}
+
+@media (min-width:1500px) {
+    .grid2 {
+        margin: 100px 200px;
+    }
+    p, a {
+        font-size: 25px;
+    }
+}
