@@ -22,7 +22,7 @@
         <div class="top">
             <div id="intro">
                 <p class="header-info"> Hello! We are <br />
-                    <span class="header-title">TDP Group 1.</span> <br /> 
+                    <span class="header-title">TDP Group 1.</span> <br />
                     <!-- Hetal &middot; Hetal  -->
                 </p>
             </div>
@@ -39,7 +39,7 @@
             <figcaption class="blog-title">Denis</figcaption>
         </div>
         <div class="flex2">
-            <img id="imgHetal" onclick="popup('imgHetal', 'modalHetal')" src="images/pineapple.jpg" class="gallery__img" alt="Hetal">
+            <img id="imgHetal" onclick="popup('imgHetal', 'modalHetal', 'closeHetal')" src="images/pineapple.jpg" class="gallery__img" alt="Hetal">
             <figcaption class="blog-title">Hetal Patel</figcaption>
         </div>
         <div class="flex2">
@@ -57,7 +57,7 @@
     </div>
     <div class="popup">
         <div id="modalHetal" class="modal">
-            <span class="close">&times;</span>
+            <span class="close closeHetal">&times;</span>
             <table class="center">
                 <tr>
                     <td class="col1">Hometown</td>
@@ -124,17 +124,17 @@
         </div>
     </div>
     <script>
-        function popup(id, modal) {
+        function popup(id, modal, close) {
             var modal = document.getElementById(modal);
             var img = document.getElementById(id);
-            
-            img.onclick = function () {
+
+            img.onclick = function() {
                 modal.style.display = "block";
             }
 
-            var span = document.getElementsByClassName("close")[0];
+            var span = document.getElementsByClassName(close)[0];
 
-            span.onclick = function () {
+            span.onclick = function() {
                 modal.style.display = "none";
             }
         }
