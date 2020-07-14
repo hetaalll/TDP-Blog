@@ -22,7 +22,7 @@
         <div class="top">
             <div id="intro">
                 <p class="header-info"> Hello! We are <br />
-                    <span class="header-title">TDP Group 1.</span> <br /> 
+                    <span class="header-title">TDP Group 1.</span> <br />
                     <!-- Hetal &middot; Hetal  -->
                 </p>
             </div>
@@ -39,7 +39,8 @@
             <figcaption class="blog-title">Denis</figcaption>
         </div>
         <div class="flex2">
-            <img id="imgHetal" onclick="popup('imgHetal', 'modalHetal')" src="images/pineapple.jpg" class="gallery__img" alt="Hetal">
+            <img id="imgHetal" onclick="popup('imgHetal', 'modalHetal')" src="images/pineapple.jpg" class="gallery__img"
+                alt="Hetal">
             <figcaption class="blog-title">Hetal Patel</figcaption>
         </div>
         <div class="flex2">
@@ -47,7 +48,8 @@
             <figcaption class="blog-title">Derek</figcaption>
         </div>
         <div class="flex2">
-            <img id="" onclick="popup('', '')" src="images/random.jpg" class="gallery__img" alt="Image 5">
+            <img id="imgGarrett" onclick="popup('imgGarrett', 'modalGarrett')" src="images/garrett.jpg"
+                class="gallery__img" alt="Image 5">
             <figcaption class="blog-title">Garrett</figcaption>
         </div>
         <div class="flex2">
@@ -122,12 +124,45 @@
                 </tr>
             </table>
         </div>
+        <div id="modalGarrett" class="modal">
+            <span class="close">&times;</span>
+            <table class="center">
+                <tr>
+                    <td class="col1">Hometown</td>
+                    <td class="col2">Forked River, NJ</td>
+                </tr>
+                <tr>
+                    <td class="col1">School</td>
+                    <td class="col2">The College of New Jersey</td>
+                </tr>
+                <tr>
+                    <td class="col1">Degree</td>
+                    <td class="col2">Computer Engineering</td>
+                </tr>
+                <tr>
+                    <td class="col1">Role</td>
+                    <td class="col2">Software Engineer</td>
+                </tr>
+                <tr>
+                    <td class="col1">Business Partner</td>
+                    <td class="col2"></td>
+                </tr>
+                <tr>
+                    <td class="col1">Mentors</td>
+                    <td class="col2"></td>
+                </tr>
+                <tr>
+                    <td class="col1">Interests</td>
+                    <td class="col2">Surfing, Snowboarding, Mechanical Keyboards</td>
+                </tr>
+            </table>
+        </div>
     </div>
     <script>
         function popup(id, modal) {
             var modal = document.getElementById(modal);
             var img = document.getElementById(id);
-            
+
             img.onclick = function () {
                 modal.style.display = "block";
             }
