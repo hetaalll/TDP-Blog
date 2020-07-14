@@ -11,15 +11,15 @@ header {
 #intro {
     color: black;
     margin: 0 50px;
-    padding-top: 100px;
+    padding-top: 200px;
 }
 
-.header-info {
+/* .header-info {
     width: 50vw;
-}
+} */
 
 .header-title {
-    font-size: 130px;
+    font-size: 100px;
     font-family: "Roboto Slab", serif;
     font-weight: 700;
     letter-spacing: 5px;
